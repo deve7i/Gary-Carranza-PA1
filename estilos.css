@@ -1,0 +1,205 @@
+/*Fondo y centro */
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: url("img/fondo.jpg") repeat;
+}
+
+.poster {
+  max-width: 1000px;
+  width: 100%;
+}
+
+/*logo isil*/
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.title {
+  flex: 1;
+  text-align: right;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #0aa4dd;
+  text-shadow: 1px 1px #999;
+}
+
+/* rayita abajo del texto*/
+.intro h2,
+.analogy h2,
+.summary h2 {
+  font-size: 20px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* === Tarjetas === */
+.defs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+/* franja de color arriba con icono */
+.card h3 {
+  margin: 0;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card p {
+  padding: 12px;
+  text-align: justify;
+  
+}
+
+/* colores distintos para cada tarjeta */
+.card:nth-child(1) h3 {
+  background-color: #f16529; 
+}
+.card:nth-child(2) h3 {
+  background-color: #2954e2; 
+}
+.card:nth-child(3) h3 {
+  background-color: #2abf6c; 
+}
+
+.card img {
+  display: block;
+  margin: 10px auto;
+  width: 60px;
+  height: auto;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+}
+
+/*color de fondo del cuadrado */
+.analogy .box {
+  flex: 1;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+
+/* franja de color en la parte superior */
+.analogy .box h4 {
+  margin: 0;
+  padding: 6px 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* colores */
+.analogy .box:nth-child(1) h4 {background-color:#f16529;}
+.analogy .box:nth-child(2) h4 {background-color:#2954e2;}
+.analogy .box:nth-child(3) h4 {background-color:#2abf6c;}
+
+/* casa imagen */
+.casita img {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border: 3px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 10px 5px 3px lightslategray;
+  box-shadow: 10px 5px lightslategray;
+  box-shadow: 10px 5px 3px lightslategray;
+}
+
+/* === Resumen === */
+.summary p {
+  background: #f9f9f9;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 2px solid #ccc;
+  text-align: center;
+  box-shadow: 10px 5px 3px lightslategray;
+  box-shadow: 10px 5px lightslategray;
+  box-shadow: 10px 5px 3px lightslategray;
+}
+/*linea debajo de la casa*/
+header {
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #000; 
+}
+
+/*caja negra grande*/
+.defs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  background-color: #000;       
+  padding: 20px;              
+  border-radius: 8px;          
+}
+.defs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 20px;                
+  border: 3px solid #000;       
+  border-radius: 0px;           
+  background-color: transparent;
+}
+.analogy .columns {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 3px solid #000;       
+  border-radius: 0px;
+  background-color: transparent;
+}
+.casita {
+  border-bottom: 4px solid #000;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.analogy .box p {
+  margin: 0;                /* quita márgenes extra */
+  padding: 10px;            /* espacio interno */
+  text-align: justify;      /* texto ordenado */
+  word-wrap: break-word;    /* corta palabras largas si es necesario */
+  box-sizing: border-box;   /* asegura que no se salga */
+}
+
+
+
